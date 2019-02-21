@@ -81,11 +81,14 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         ui.GetComponent<UIManager>().GameOver();
+        Application.Quit();
+
     }
 
     public void winGame()
     {
         Time.timeScale = 0;
         ui.GetComponent<UIManager>().winGame();
+        Application.Quit();
     }
 }
